@@ -43,7 +43,7 @@ function dataProcessing(response){
     if (response.data.totalHits === 0) {
         return Notify.failure('Sorry, there are no images matching your search query. Please try again.');
     }
-    if (response.data.hits.length < 40) {
+    if (response.data.hits.length < 40 && response.data.totalHits !== 0) {
       loadMoreBtn.disabled = true;
        return  Notify.warning(`We're sorry, but you've reached the end of search results.`);
     }
