@@ -1,7 +1,7 @@
 
 .header{
 padding: 40px auto;
-background-color: violet;
+background-color: #4CAF50;
 margin-bottom: 40px;
 display: flex;
 justify-content: center;
@@ -52,5 +52,17 @@ button{
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+.load-more{
+  margin: 50px auto;
+  display: block;
+  background-color: #4CAF50;
+  color: whitesmoke;
+ 
+
+}
+.load-more:disabled{
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
